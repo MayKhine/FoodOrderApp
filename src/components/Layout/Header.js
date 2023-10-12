@@ -8,7 +8,7 @@ export const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <h1>Yummy React</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onShowCart={props.onShowCart} />
       </header>
       <div className={classes["main-image"]}>
         <img src={mealImg} alt="Image desc" />
