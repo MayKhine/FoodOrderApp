@@ -12,7 +12,7 @@ export const Cart = (props) => {
   )
 
   return (
-    <Modal>
+    <Modal onClose={props.onClose}>
       <cartItems />
       <div className={classes.total}>
         <span>Total Amount</span>
@@ -22,7 +22,7 @@ export const Cart = (props) => {
         <button
           className={classes["button--alt"]}
           onClick={() => {
-            props.onHideCart()
+            props.onClose()
           }}
         >
           Close
